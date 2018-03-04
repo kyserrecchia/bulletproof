@@ -10,7 +10,19 @@ app.set("view engine", "ejs");
 
 //////////////////////////////////
 app.get("/", function(req, res){
+	res.redirect("/home");
+});
+
+app.get("/home", function(req, res){
 	res.render("home");
+});
+
+app.get("/shop", function(req, res){
+	res.render("shop");
+});
+
+app.get("/learn", function(req, res){
+	res.render("learnMore");
 });
 
 // app.get("/campgrounds", function(req, res){
