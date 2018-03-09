@@ -10,13 +10,11 @@
 
 		<div id="mySidenav" class="sidenav">
 			<div class="sidenav1">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<a href="/home">Home</a>
 				<a href="/shop">Shop</a>
 				<a href="/learn">Learn More</a>
 				<a href="#">Contact</a>
-			</div>
-			  
+			</div>  
 		</div>
 
 		<div id="main" class="container">
@@ -28,6 +26,31 @@
 				</a>
 				<a class="header">BULLETPROOF BONGS</a>
 			</div>
+		</div>
+		<hr>
+		<div class="bongContainer">
+			<p><strong>OUR BONGS</strong></p>
+		<!-- EACH ITEM LOOKS LIKE THIS -->
+			<% bongs.forEach(function(bong){ %>
+				<div class="bong">
+					<img src="images/bongpic.jpg">
+					<p class="bongName">Hey</p>
+					
+					<!-- <p class="content">
+						<a href="/blogs/"></a>
+						<div class="meta">
+							<span>lll</span>
+						</div>
+						<div class="description">
+							<p>llol</p>
+						</div>
+						<div class="extra">
+							<a class="ui floated basic violet button" href="/blogs/">Read More
+								<i class="right chevron icon"></i></a>
+						</div>
+					</p> -->
+				</div>
+			<% }); %>
 		</div>
 
 		<script>
@@ -43,13 +66,15 @@
 			    document.getElementById("mySidenav").style.width = "0";
 			    document.getElementById("main").style.marginLeft= "0";
 			    document.body.style.backgroundColor = "white";
-			    contain.classList.toggle("change");
+			    // contain.classList.toggle("change");
 			    menuOpen = false;
 			}
 			function myFunction() {
+				contain.classList.toggle("change");
 				if(!menuOpen){
 					openNav();
-					contain.classList.toggle("change");
+				} else{
+					closeNav();
 				}
 			}
 		</script>

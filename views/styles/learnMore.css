@@ -44,10 +44,10 @@ a#contain {
 
 h1 {
     position: absolute;
-    font-size: 5.5em;
+    font-size: 4.5em;
     /*padding-top: 200px;*/
-    padding-left: 5%;
-    margin-top: -150px;
+    padding-left: 13%;
+    margin-top: -115px;
     font-weight: 500;
     font-family: 'Berkshire Swash', cursive;
     font-family: 'Concert One', cursive;
@@ -62,7 +62,7 @@ h1 {
     font-size: 1.5em;
     /*padding-top: 200px;*/
     padding-left: 37%;
-    margin-top: -175px;
+    margin-top: -155px;
     font-weight: 500;
     font-family: 'Berkshire Swash', cursive;
     font-family: 'Concert One', cursive;
@@ -88,7 +88,7 @@ h1 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 20px;
 }
 

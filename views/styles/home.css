@@ -6,9 +6,10 @@
 .container {
 	position: relative;
 	width: 100%;
-	height: 700px;
+	height: 900px;
 	background-size: 100% 100%;
-	background-image: url("http://openwalls.com/image/20255/thumb3_old_lady_with_bong.jpg");
+	background-image: url(../images/bulletproofhomedited.png);
+    /*thanks to andhika soreng from unsplash*/
 }
 a#contain {
 	border: none;

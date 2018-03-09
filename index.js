@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("views"));
 app.set("view engine", "ejs");
 
+var bongs = [1,1,1,1,1,1];
 
 //////////////////////////////////
 app.get("/", function(req, res){
@@ -18,7 +19,7 @@ app.get("/home", function(req, res){
 });
 
 app.get("/shop", function(req, res){
-	res.render("shop");
+	res.render("shop", {bongs: bongs});
 });
 
 app.get("/learn", function(req, res){
@@ -70,5 +71,5 @@ app.get("/learn", function(req, res){
 
 
 app.listen(3000, function(){
-	console.log("Campground Server Running on 3000!");
+	console.log("Bulletproof Server Running on 3000!");
 });
