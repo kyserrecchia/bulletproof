@@ -10,13 +10,11 @@
 
 		<div id="mySidenav" class="sidenav">
 			<div class="sidenav1">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<a href="/home">Home</a>
 				<a href="/shop">Shop</a>
 				<a href="/learn">Learn More</a>
 				<a href="#">Contact</a>
-			</div>
-			  
+			</div>  
 		</div>
 
 		<div id="main" class="container">
@@ -43,13 +41,14 @@
 			    document.getElementById("mySidenav").style.width = "0";
 			    document.getElementById("main").style.marginLeft= "0";
 			    document.body.style.backgroundColor = "white";
-			    contain.classList.toggle("change");
 			    menuOpen = false;
 			}
 			function myFunction() {
+				contain.classList.toggle("change");
 				if(!menuOpen){
 					openNav();
-					contain.classList.toggle("change");
+				} else{
+					closeNav();
 				}
 			}
 		</script>
