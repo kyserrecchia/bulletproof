@@ -70,6 +70,7 @@ app.get("/learn", function(req, res){
 
 
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
 	console.log("Bulletproof Server Running on 3000!");
 });
+
